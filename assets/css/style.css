@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* sade modal taska uygun */
+/* .base{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;   
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+.modal{
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-50px);
+    transition: all 0.5s ease;
+    background-color: #888;
+    border-radius: 8px;
+}
+
+.aktiv{
+    opacity: 1;
+    transform: translateY(0);
+}
+.btnCancel{
+    cursor: pointer;
+}
+button{
+    width: 100px;
+    max-width: 100%;
+    background-color: aqua;
+    border: none;
+    border-radius: 8px;
+} */
+
+
+
+/* Bu modal bir az daha css yazilmis elave */
+.bg{
+    background: #1A2980;  
+    background: linear-gradient(to right, #26D0CE, #1A2980); 
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    opacity: 0;
+    width: 350px;
+    height: 230px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    top: 10%; 
+    transform: translate(-50%, -50%); 
+   
+    transition: all 0.5s ease;
+}
+.card-content{
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.card-content h3{
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+}
+.card-content p{
+    font-size: 14px;
+    color: #888;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.card-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+input{
+    width: 95%;
+    height: 30px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+
+.second{
+    padding: 10px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    background-color: rgb(136, 136, 169);
+    border: 0;
+    transition: all .5s ease-out;
+}
+
+.second:hover{
+    background-color: #26D0CE;
+}
+
+span{
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #e0d7d7;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    right: 10px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+span:hover
+{
+    background-color: #26D0CE;
+
+}
+
+.aktiv{
+    opacity: 1;
+}
+
+.buton{
+    width: 100px;
+    padding: 10px 30px;
+    margin: 20px 50px;
+    max-width: 100%;
+    background-color: aqua;
+    border: none;
+    border-radius: 8px;
+}
